@@ -1,11 +1,10 @@
 Package: DataAnalyze1.0
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Useful for DataAnalysis
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Chitran Ghosal
+Maintainer: Chitran Ghosal <ghosal.chitran@gmail.com>
+Description: Has functions for Data Analysis and regression methodologies.
+License: GNU GPLv3
 Encoding: UTF-8
 LazyData: true
