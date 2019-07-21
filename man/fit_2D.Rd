@@ -5,7 +5,7 @@
 Iteratively fits 2D regression models to a dataset using the function \code{fit_2D(func, dat, it, op_v)}
 }
 \description{
-The function, \code{fit_2D}, takes four arguments, \textit{func}, **dat**, **it**, **op_v** and fits the *2D* model described by the argument **func** into the data described by the argument **dat**. The parameter **it** describes the number of iterations that the code generates before it decides to declare that the starting/intial values of the vector to be iterated, **op_v**, is a bad starting point to search for a local minima within the given number of iterations, **it**. In such cases the message *solution did not converge* will be displayed. **op_v** is a vector comprising the initial values/guess point from where the vector will iterate itself to look for a local minima. It must however be remembered that the function, \code{fit_2D}, does not have pre-defined default values attached to its arguments and also that the function **does not** under present circumstances support optimization algorithms with *constraints* defined on them. This however is a work in progress and will be taken care of in future contexts.
+The function, \code{fit_2D}, takes four arguments, \code{func}, \code{dat}, \code{it}, \code{op_v} and fits the 2D model described by the argument \code{func} into the data described by the argument \code{dat}. The parameter \code{it} describes the number of iterations that the code generates before it decides to declare that the starting/intial values of the vector to be iterated, \code{op_v}, is a bad starting point to search for a local minima within the given number of iterations, \code{it}. In such cases the message \code{solution did not converge} will be displayed. \code{op_v} is a vector comprising the initial values/guess point from where the vector will iterate itself to look for a local minima. It must however be remembered that the function, \code{fit_2D}, does not have pre-defined default values attached to its arguments and also that the function \code{does not} under present circumstances support optimization algorithms with \code{constraints} defined on them. This however is a work in progress and will be taken care of in future contexts.
 }
 \usage{
 fit_2D(func, dat, it, op_v)
@@ -16,8 +16,8 @@ fit_2D(func, dat, it, op_v)
 The argument \code{func} is a R function. It defines the model that the user wants to fit to his data defined in the argument \code{dat}. The argument has certain rules and restrictions.
 1. The argument \code{func} has to be a user-defined function itself
 2. The function that the user passes to the argument \code{func} must itself be a function that accepts only one argument. This argument must be the vector that needs to be iterated, \code{op_v}.
-3. The vector \code{op_v} must be defined after the definition of the function that is to be passed in \code{func}, failing which, the argument passed in \code{func} ceases to be a function and this would throw an error. *See example below*
-4. The function has to return a value, **y**. *See example below*
+3. The vector \code{op_v} must be defined after the definition of the function that is to be passed in \code{func}, failing which, the argument passed in \code{func} ceases to be a function and this would throw an error. \code{See example below}
+4. The function has to return a value, \code{y}. *See example below*
 }
   \item{dat}{
 %%     ~~Describe \code{dat} here~~
