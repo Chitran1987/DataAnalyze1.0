@@ -20,7 +20,7 @@ The argument \code{func} is a R function. It defines the model that the user wan
 4. The function has to return a value, \code{y}. \code{See example below}
 }
   \item{dat}{
-%%     ~~Describe \code{dat} here~~
+The argument \code{dat} has to be a matrix of size \code{2Xn}, where, \code{n<-length(x)}. The first row of \code{dat}(\code{dat[1,]}) should be the \code{y} values whereas the second row \code{\code{dat[2,]}} should be the \code{x} values. \code{See example below}
 }
   \item{it}{
 %%     ~~Describe \code{it} here~~
