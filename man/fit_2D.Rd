@@ -17,7 +17,7 @@ The argument \code{func} is a R function. It defines the model that the user wan
 1. The argument \code{func} has to be a user-defined function itself
 2. The function that the user passes to the argument \code{func} must itself be a function that accepts only one argument. This argument must be the vector that needs to be iterated, \code{op_v}.
 3. The vector \code{op_v} must be defined after the definition of the function that is to be passed in \code{func}, failing which, the argument passed in \code{func} ceases to be a function and this would throw an error. \code{See example below}
-4. The function has to return a value, \code{y}. *See example below*
+4. The function has to return a value, \code{y}. \code{See example below}
 }
   \item{dat}{
 %%     ~~Describe \code{dat} here~~
